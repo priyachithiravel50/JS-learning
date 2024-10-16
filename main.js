@@ -1,3 +1,15 @@
+// function example() {
+//     var x = 10;  
+//     if (true) {
+//         let y = 20; 
+//         const z = 30;
+//         console.log(x, y, z); 
+//     }
+//     console.log(x); 
+//     console.log(y);
+//     console.log(z); 
+// }
+// example();
 
 // Arithmetic Operators
 let a = 10;
@@ -53,6 +65,101 @@ var l = 6;
 var postdecrement = l--; 
 console.log("value of Postdecrement:", postdecrement); 
 console.log("New value of l:", l);
+
+//Assignment operators
+let x;
+
+// Basic Assignment
+x = 10;
+console.log("x =", x); 
+
+// Addition Assignment
+x += 5; x=x+5
+console.log("x += 5:", x); 
+
+// Subtraction Assignment
+x -= 3;
+console.log("x -= 3:", x);
+
+//Multiplication Assignment
+x *=2
+console.log("x *= 2:", x);
+
+// Division Assignment
+x /= 4;
+console.log("x /= 4:", x); 
+
+// Remainder Assignment
+x %= 2; 
+console.log("x %= 2:", x); 
+
+// Exponentiation Assignment
+x = 2; 
+x **= 3; 
+console.log("x **= 3:", x); 
+
+//comparison operators
+//  (==)
+console.log(5 == '5'); 
+
+// (!=)
+console.log(5 != '5');
+
+// (===)
+console.log(5 === '5'); 
+
+// (!==)
+console.log(5 !== '5'); 
+
+// (>)
+console.log(7 > 5); 
+
+//  (>=)
+console.log(5 >= 5); 
+
+// (<)
+console.log(3 < 5); 
+
+// (<=)
+console.log(5 <= 5); 
+
+
+//logical operator
+
+let d = 5, f = 10;
+
+// AND (&&)
+console.log(d > 10 && f > 0); 
+
+// OR (||)
+console.log(d > 0 || f < 0); 
+
+// NOT (!) 
+console.log(!(d > f)); 
+
+//Data types
+
+let number = 42;                     
+console.log("Number:", number);     
+
+let text = "Hello";                  
+console.log("String:", text);       
+
+let star = true;                   
+console.log("Boolean:", star);     
+
+let value;                 
+console.log("Undefined:", value); 
+
+let values = null;             
+console.log("Null:", values);    
+
+let word = Symbol('id');        
+console.log("Symbol:", word);    
+
+let Number = 9007089999997655n;   
+console.log("BigInt:", Number);    
+
 
 
 //if statement
