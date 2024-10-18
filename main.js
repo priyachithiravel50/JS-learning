@@ -195,39 +195,105 @@
 
 
 //Switch Statement
-const day = "Thursday";
+// const day = "Thursday";
 
-switch (day) {
-  case "Monday":
-    console.log("Start of the week");
-    break;
-  case "Tuesday":
-    console.log("It's Tuesday");
-    break;
-  case "Wednesday":
-    console.log("Midweek day");
-    break;
-  case "Thursday":
-    console.log("It's Thursday");
-    break;
-  case "Friday":
-    console.log("last day");
-    break;
-  case "Saturday":
-  case "Sunday":
-    console.log("End of the week");
-    break;
-  default:
-    console.log("Invalid day");
+// switch (day) {
+//   case "Monday":
+//     console.log("Start of the week");
+//     break;
+//   case "Tuesday":
+//     console.log("It's Tuesday");
+//     break;
+//   case "Wednesday":
+//     console.log("Midweek day");
+//     break;
+//   case "Thursday":
+//     console.log("It's Thursday");
+//     break;
+//   case "Friday":
+//     console.log("last day");
+//     break;
+//   case "Saturday":
+//   case "Sunday":
+//     console.log("End of the week");
+//     break;
+//   default:
+//     console.log("Invalid day");
+// }
+
+
+// //login page
+// function login() {
+//   const username = document.getElementById("username").value;
+//   const password = document.getElementById("password").value;
+//   console.log("Username:", username);
+//   console.log("Password:", password);
+// }
+
+
+//Array  Destructuring Method:
+const fruits = ['apple', 'banana', 'cherry'];
+const [first, second, third] = fruits;
+console.log(first,second);  
+
+
+
+ //for loop
+ for(let i=0;i<5;i++)
+  console.log(i);
+
+ //for in loop
+ //object method:
+//  const person = { name: 'Priya', age: 21, place: 'Thanjavur' };
+
+// for (let key in person) {
+//   //concat method
+//     console.log(key + ': ' + person[key]);
+// }
+
+// //Array Method:
+let colors = ['red','green','black'];
+
+// for(let key in colors){
+//   console.log(colors [key]);
+// }
+
+//for of method:
+for(let color of colors){
+  console.log("color:"+ color);
 }
 
+//while loop
+let i = 0;
+
+while (i < 10) {
+    console.log(i);
+    i++;
+}
+
+//do while
+// let i = 0;
+
+// do {
+//     console.log(i);
+//     i++;
+// } while (i < 5);
 
 
-function login() {
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
-  console.log("Username:", username);
-  console.log("Password:", password);
+//break
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+      break; 
+  }
+  console.log(i);
+}
+
+//continue
+for (let i = 0; i < 5; i++) {
+  if (i === 2) {
+      continue; 
+  }
+  console.log(i);
 }
 
 
