@@ -9,10 +9,10 @@
 // }
 // console.log(x); 
 
-// //const:
-// const birthYear = 1995;
-//  //birthYear = 1996; 
-// console.log(birthYear); 
+//const:
+const birthYear = 1995;
+ //birthYear = 1996; 
+console.log(birthYear); 
 
 // Arithmetic Operators
 let a = 10;
@@ -144,13 +144,6 @@ const arr3 = [...arr1, ...arr2];
 console.log("arr3:",arr3); 
 
 
-//concat method:
-const arr4 = [1, 2, 3];
-const arr5 = [4, 5, 6];
-const result = arr4.concat(arr5);
-console.log(result); 
-
-
 //Data types
 
 let number = 42;                     
@@ -236,12 +229,18 @@ switch (day) {
 }
 
 
-//login page
+//Login Page
 function login() {
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
+  let username = document.getElementById('username').value;
+  let password = document.getElementById('password').value;
   console.log("Username:", username);
   console.log("Password:", password);
+
+  // Display entered details
+  let outputText = `<h2>Details</h2>
+      <p>Username: ${username}</p>
+      <p>Password: ${password}</p>`;
+  document.getElementById('output').innerHTML = outputText;
 }
 
 
@@ -288,10 +287,10 @@ while (i < 10) {
 //do while
 // let i = 0;
 
-// do {
-//     console.log(i);
-//     i++;
-// } while (i < 5);
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
 
 
 //break
@@ -309,6 +308,180 @@ for (let i = 0; i < 5; i++) {
   }
   console.log(i);
 }
+
+
+//Bitwise operator
+//AND (&):
+let and = 5 & 3;
+console.log(and); 
+
+//Bitwise OR (|):
+let or = 5 | 3;
+console.log(or); 
+
+//Bitwise XOR (^) :
+let xor = 5 ^ 3;
+console.log(xor); 
+
+//Bitwise NOT (~)
+let not = ~5;
+console.log(not);
+
+//Left Shift (<<)
+let shift = 5 << 1;
+console.log(shift); 
+
+// Right Shift (>>)
+let rshift = 5 >> 1;
+console.log(rshift); 
+
+
+//Zero-fill Right Shift (>>>)
+let zero = 5 >>> 1;
+console.log(zero); 
+
+
+//Array methods:
+//Push
+// let arr = [1,2,3]
+// arr.push(4);
+// console.log(arr)
+
+// //Pop()
+// let val = [1,2,3,4]
+// val.pop(4);
+// console.log(val)
+
+// //Shift()
+// let val1 = [1, 2, 3];
+// val1.shift();
+// console.log(val1);  
+
+// //Unshift()
+// let val2 = [2, 3];
+// val2.unshift(1);
+// console.log(val2); 
+
+// //Slice()
+// let val3 = [1, 2, 3, 4, 5];
+// let newArr = arr.slice(1, 3); 
+// console.log(newArr);  
+
+// //Splice()
+// let val4 = [1, 2, 3, 4, 5];
+// val4.splice(2, 1, 6);  
+// console.log(val4);  
+
+
+//concat()
+const arr4 = [1,2,3];
+const arr5 = [4,5,6];
+const result = arr4.concat(arr5);
+console.log(result); 
+
+//foreach()
+let val5 = [1, 2, 3];
+val5.forEach(function(item) {
+  console.log(item);  
+});
+
+//map()
+let val6 = [1, 2, 3];
+let result1 = val6.map(x => x * 2);
+console.log(result1);  
+
+//filter()
+let val7 = [1, 2, 3, 4, 5];
+let result2 = val7.filter(x => x > 2);
+console.log(result2);  
+
+//find()
+let fin = [1, 2, 3, 4];
+let result3 = fin.find(x => x > 2);
+console.log(result3);  
+
+//findIndex()
+let prob = [1, 2, 3, 4];
+let index = prob.findIndex(x => x > 2);
+console.log(index);  
+
+//indexOf()
+  let off = [1, 2, 3, 2];
+  console.log(off.indexOf(2));  
+  
+  //includes()
+  let des = [1, 2, 3];
+console.log(des.includes(2)); 
+
+//reverse()
+let rev = [1, 2, 3];
+rev.reverse();
+console.log(rev);  
+
+//sort()
+let sor = [3, 1, 4, 1, 5];
+sor.sort();
+console.log(sor);  
+
+//join()
+let van = ['Hello', 'World'];
+let joined = van.join(' ');
+console.log(joined);  // Output: "Hello World"
+
+//some()
+let som = [1, 2, 3, 4];
+let hasLargeNumber = som.some(x => x > 3);
+console.log(hasLargeNumber);  
+
+//values
+let vac = ['a', 'b', 'c'];
+let iterator = vac.values();
+for (let value of iterator) {
+    console.log(value);  
+}
+
+//every()
+let ever = [1, 2, 3, 4];
+let allPositive = ever.every(x => x > 0);
+console.log(allPositive);
+
+//Fill
+let fil = [1, 2, 3, 4, 5];
+fil.fill(0, 2, 4);  
+console.log(fil);  
+
+// copyWithin
+let copy = [1, 2, 3, 4, 5];
+copy.copyWithin(0, 3);  
+console.log(copy);  
+
+//Flat()
+let flat = [1, [2, [3, [4]], 5]];
+let flatArr = flat.flat(2);  
+console.log(flatArr);  
+
+// Flatmap()
+let map = [1, 2, 3];
+let total = map.flatMap(x => [x, x * 2]);
+console.log(total);  
+
+// isArray()
+let array = [1, 2, 3];
+let tot = Array.isArray(array);
+console.log(tot);  
+
+//of
+let of = Array.of(1, 2, 3);
+console.log(of);  
+
+
+
+
+
+
+
+
+
 
 
 // //class Method
